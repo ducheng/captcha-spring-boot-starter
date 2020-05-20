@@ -33,4 +33,4 @@
 
 	// 干扰线宽度
 	int disturbLinesize() default 4;
-  
+  ![image](https://github.com/ducheng/captcha-spring-boot-starter/blob/master/images/1.png)
