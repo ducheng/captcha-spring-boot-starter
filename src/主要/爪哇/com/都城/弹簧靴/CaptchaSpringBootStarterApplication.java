@@ -20,16 +20,10 @@ import cn.hutool.captcha.CircleCaptcha;
 import cn.hutool.captcha.LineCaptcha;
 
 @SpringBootApplication
-@Controller
 public class CaptchaSpringBootStarterApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CaptchaSpringBootStarterApplication.class, args);
 	}
 	
-	@GetMapping("/index")
-	@ReturnCaptcha(codeNumber = 6,disturbLinesize = 60)
-	public Captcha getindex() {
-		return Captcha.LINE;
-	}
 }
