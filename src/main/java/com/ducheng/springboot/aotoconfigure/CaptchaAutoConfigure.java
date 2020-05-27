@@ -30,7 +30,7 @@ public class CaptchaAutoConfigure {
 	public WebMvcConfigurer excelWebMvcConfigurer() {
 		CaptchaWebMvcConfiguation configurer = new CaptchaWebMvcConfiguation();
 		configurer.setEnable(this.enable);
-		LOGGER.info("初始化web 容器");
+		LOGGER.info("初始化 验证码 web 容器");
 		return configurer;
 	}
 }
