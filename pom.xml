@@ -37,8 +37,10 @@
 	<scm>
 		<tag>master</tag>
 		<url>https://github.com/ducheng/captcha-spring-boot-starter</url>
-		<connection>scm:git:https://github.com/ducheng/captcha-spring-boot-starter.git</connection>
-		<developerConnection>scm:git:git@https://github.com/ducheng/captcha-spring-boot-starter.git</developerConnection>
+		<connection>scm:git:https://github.com/ducheng/captcha-spring-boot-starter.git
+		</connection>
+		<developerConnection>scm:git:git@https://github.com/ducheng/captcha-spring-boot-starter.git
+		</developerConnection>
 	</scm>
 
 	<distributionManagement>
@@ -48,14 +50,16 @@
 		</snapshotRepository>
 		<repository>
 			<id>ossrh</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/
+			</url>
 		</repository>
 	</distributionManagement>
 
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<project.reporting.outputEncoding>UTF-8
+		</project.reporting.outputEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<spring-boot.version>2.2.7.RELEASE</spring-boot.version>
@@ -78,6 +82,26 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>28.1-jre</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+	   </dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.62</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
