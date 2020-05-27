@@ -7,9 +7,6 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
-import com.ducheng.springboot.web.RetuenCaptchReturnValueHandler;
-import com.ducheng.springboot.webmvcconfigure.CaptchaWebMvcConfiguation;
 import com.ducheng.springboot.webmvcconfigure.GuavaCacheWebMvcConfiguation;
 
 
@@ -18,7 +15,7 @@ import com.ducheng.springboot.webmvcconfigure.GuavaCacheWebMvcConfiguation;
 @ConfigurationProperties("com.ducheng.guava.cache")
 public class GuavaCacheConfigure {
 	
-	private static final Logger LOGGER = LoggerFactory.getLogger(RetuenCaptchReturnValueHandler.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(GuavaCacheConfigure.class);
 	
 	private boolean enable = true;
 
@@ -32,7 +29,7 @@ public class GuavaCacheConfigure {
 	public WebMvcConfigurer excelWebMvcConfigurer() {
 		GuavaCacheWebMvcConfiguation configurer = new GuavaCacheWebMvcConfiguation();
 		configurer.setEnable(this.enable);
-		LOGGER.info("初始化 guavacache 容器");
+		LOGGER.info("start guavacache ");
 		return configurer;
 	}
 }
