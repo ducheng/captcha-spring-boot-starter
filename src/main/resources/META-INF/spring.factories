@@ -1,2 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.ducheng.springboot.aotoconfigure.CaptchaAutoConfigure
+com.ducheng.springboot.aotoconfigure.GuavaCacheConfigure
