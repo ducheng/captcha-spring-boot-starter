@@ -1,5 +1,4 @@
 package com.ducheng.springboot.webmvcconfigure;
-
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -29,7 +28,7 @@ public class CaptchaWebMvcConfiguation implements WebMvcConfigurer {
 	@Override
 	public void addReturnValueHandlers(List<HandlerMethodReturnValueHandler> handlers) {
 		if (this.enable) {
-			LOGGER.info(" 注入web 容器成功 ");
+			LOGGER.info(" 注入 验证码web 容器成功 ");
 			handlers.add(new RetuenCaptchReturnValueHandler());
 		}
 	}
