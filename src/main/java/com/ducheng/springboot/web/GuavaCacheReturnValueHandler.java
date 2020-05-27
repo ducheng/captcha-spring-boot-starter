@@ -71,7 +71,7 @@ public class GuavaCacheReturnValueHandler implements HandlerMethodReturnValueHan
 	}
 	
 	/**
-	 * 这是去掉转义字符
+	 * 去掉{}[] 两边的字符串
 	 * @return
 	 */
 	public String  RemoveEscape(String value) {
